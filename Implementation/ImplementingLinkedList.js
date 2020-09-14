@@ -40,6 +40,29 @@ class LinkedList {
   }
 
   //implementing InsertAt
+  insertAt(element,index) {
+    // if user requesting more than the size of the link return false;
+    if(index > 0 && index > this.size) {
+      return false;
+    } else {
+
+      var node = new Node(element);
+      var curr,pre;
+      curr = this.head;
+
+      if(index == 0) {
+        node.next = this.head;
+        this.head = node;
+      } else {
+        curr = this.head;
+
+      }
+
+    }
+
+
+  }
+
 
 
 
