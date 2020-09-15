@@ -43,20 +43,25 @@ class LinkedList {
   insertAt(element,index) {
     // if user requesting more than the size of the link return false;
     if(index > 0 && index > this.size) {
+
       return false;
+
     } else {
 
       var node = new Node(element);
       var curr,pre;
       curr = this.head;
       //attaches the new node to the rest of the list
+
       if(index == 0) {
         node.next = this.head;
         this.head = node;
+
       } else {
         curr = this.head;
         // iterator to count when we reach the index to insert at
         var ite = 0;
+
         while(ite < index) {
              // we increment the iterator and update the pre to curr and move the curr to the next list.
              ite++;
@@ -67,14 +72,35 @@ class LinkedList {
         node.next = curr;
         pre.next = node;
       }
-
       this.size++;
-
     }
   } // END InsertAT
-  //removefrom(location)
-  removeFrom(location) {
 
+  //removefrom(location)
+  removeFrom(idx) {
+    if(idx > 0 && idx > this.size) {
+      return -1;
+
+    } else {
+      var curr,pre;
+      curr = this.head;
+      if(idx == 0) {
+        this.head = curr.next;
+
+      } else {
+        var ite = 0;
+
+        while(ite < idx) {
+          ite++;
+          pre = curr;
+          curr = curr.next;
+        }
+        //remove node
+        prev.next = curr.next;
+      }
+      this.size--;
+    }
+    return curr.element;
   }
   //removeELement
   removeElement(location){
