@@ -72,4 +72,28 @@ class LinkedList {
 
     }
   } // END InsertAT
+  //removefrom(location)
+  removeFrom(location) {
+
+  }
+  //removeELement
+  removeElement(location){
+
+  }
+
+  //HELPERMETHODS
+  //isEmpty
+  isEmpty() {
+
+  }
+
+  //size_Of_List
+  listSize() {
+
+  }
+
+  //PrintList
+  printList() {
+
+  }
 }
