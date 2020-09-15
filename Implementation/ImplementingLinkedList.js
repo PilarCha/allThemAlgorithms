@@ -37,7 +37,7 @@ class LinkedList {
     //increment the size by 1 since we added one.
     this.size++;
 
-  }
+  } // END Add LINKEDLIST
 
   //implementing InsertAt
   insertAt(element,index) {
@@ -49,21 +49,27 @@ class LinkedList {
       var node = new Node(element);
       var curr,pre;
       curr = this.head;
-
+      //attaches the new node to the rest of the list
       if(index == 0) {
         node.next = this.head;
         this.head = node;
       } else {
         curr = this.head;
-
+        // iterator to count when we reach the index to insert at
+        var ite = 0;
+        while(ite < index) {
+             // we increment the iterator and update the pre to curr and move the curr to the next list.
+             ite++;
+             pre = curr;
+             curr = curr.next;
+        }
+        // we made it to the index we want to insert at. BEGIN INSERTING
+        node.next = curr;
+        pre.next = node;
       }
 
+      this.size++;
+
     }
-
-
-  }
-
-
-
-
+  } // END InsertAT
 }
