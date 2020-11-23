@@ -54,3 +54,7 @@ queue.enqueue(44);
 console.log(queue.front());
 
 console.log(queue.back());
+
+console.log(queue.dequeue());
+
+console.log(queue.printQueue());
