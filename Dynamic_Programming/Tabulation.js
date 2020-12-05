@@ -6,4 +6,8 @@ const fib = (n) => {
 console.log(fib(6));
 console.log(fib(8));
 console.log(fib(13));
-console.log(fib(80))
+//gets stuck here
+console.log(fib(80));
+
+//time is 0(n);
+//space is 0(n);
