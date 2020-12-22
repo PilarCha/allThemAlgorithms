@@ -2,6 +2,7 @@
 // js object, keys will be arg to fn, value will be the return value
 
 const fib = (n,memo = {}) => {
+  // new base case to return memo if it is already in object
   if(n in memo) return memo[n];
   if(n <= 2) return 1;
   memo[n] = fib(n-1,memo) + fib(n-2,memo);
