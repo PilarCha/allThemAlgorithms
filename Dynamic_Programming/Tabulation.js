@@ -13,7 +13,7 @@ console.log(fib(6));
 console.log(fib(8));
 console.log(fib(13));
 //gets stuck here
-console.log(fib(80));
+console.log(fib(5000));
 
 //time is 0(2n); bottleneck
 //space is 0(n);
