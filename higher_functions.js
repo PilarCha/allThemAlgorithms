@@ -32,9 +32,6 @@ console.log('reduce', arrayZ.reduce(reducer))
 console.log('mapEvens', mapEvens(arrayZ))
 console.log('mapOdds', mapOdds(arrayZ))
 
-test 123
-test 123
-
 
 
 
